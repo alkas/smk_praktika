@@ -1,6 +1,7 @@
 ﻿#pragma once
 
 #include "frSkaiciuotuvas.h"
+#include "MyForm.h"
 
 namespace SMK_1_praktika {
 
@@ -37,6 +38,7 @@ namespace SMK_1_praktika {
 			}
 		}
 	private: System::Windows::Forms::Button^ btnSkaiciuotuvas;
+	private: System::Windows::Forms::Button^ button1;
 	protected:
 
 	protected:
@@ -55,6 +57,7 @@ namespace SMK_1_praktika {
 		void InitializeComponent(void)
 		{
 			this->btnSkaiciuotuvas = (gcnew System::Windows::Forms::Button());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// btnSkaiciuotuvas
@@ -67,12 +70,23 @@ namespace SMK_1_praktika {
 			this->btnSkaiciuotuvas->UseVisualStyleBackColor = true;
 			this->btnSkaiciuotuvas->Click += gcnew System::EventHandler(this, &mainForm::btnSkaiciuotuvas_Click);
 			// 
+			// button1
+			// 
+			this->button1->Location = System::Drawing::Point(63, 47);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(81, 36);
+			this->button1->TabIndex = 1;
+			this->button1->Text = L"MyForm";
+			this->button1->UseVisualStyleBackColor = true;
+			this->button1->Click += gcnew System::EventHandler(this, &mainForm::button1_Click);
+			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
 			this->ClientSize = System::Drawing::Size(212, 206);
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->btnSkaiciuotuvas);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"mainForm";
@@ -87,6 +101,10 @@ namespace SMK_1_praktika {
 	private: System::Void btnSkaiciuotuvas_Click(System::Object^ sender, System::EventArgs^ e) {
 		frSkaiciuotuvas^ form2 = gcnew frSkaiciuotuvas();
 		form2->Show();
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+		MyForm^ form3 = gcnew MyForm();
+		form3->Show();
 	}
 	};
 }

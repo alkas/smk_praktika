@@ -9,6 +9,7 @@ using namespace System;
 
 #include "mainForm.h"
 #include "frSkaiciuotuvas.h"
+#include "MyForm.h"
 
 using namespace System::Windows::Forms;
 
