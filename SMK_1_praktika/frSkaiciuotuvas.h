@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 namespace SMK_1_praktika {
 
@@ -9,9 +9,9 @@ namespace SMK_1_praktika {
 	using namespace System::Data;
 	using namespace System::Drawing;
 
-	/// <summary>
-	/// Summary for MyForm
-	/// </summary>
+	// <summary>
+	// Summary for MyForm
+	// </summary>
 	public ref class frSkaiciuotuvas : public System::Windows::Forms::Form
 	{
 	public:
@@ -55,14 +55,14 @@ namespace SMK_1_praktika {
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(284, 261);
-			this->Name = L"MyForm";
-			this->Text = L"MyForm";
-			this->Load += gcnew System::EventHandler(this, &frSkaiciuotuvas::MyForm_Load);
+			this->Name = L"frSkaiciuotuvas";
+			this->Text = L"Skaičiuotuvas";
+			this->Load += gcnew System::EventHandler(this, &frSkaiciuotuvas::frSkaiciuotuvas_Load);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
-	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+	private: System::Void frSkaiciuotuvas_Load(System::Object^ sender, System::EventArgs^ e) {
 	}
 	};
 }

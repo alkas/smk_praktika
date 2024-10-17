@@ -1,4 +1,6 @@
-#pragma once
+﻿#pragma once
+
+#include "frSkaiciuotuvas.h"
 
 namespace SMK_1_praktika {
 
@@ -34,7 +36,7 @@ namespace SMK_1_praktika {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ btnSkaiciuotuvas;
 	protected:
 
 	protected:
@@ -52,17 +54,18 @@ namespace SMK_1_praktika {
 		// </summary>
 		void InitializeComponent(void)
 		{
-			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->btnSkaiciuotuvas = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
-			// button1
+			// btnSkaiciuotuvas
 			// 
-			this->button1->Location = System::Drawing::Point(60, 100);
-			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(85, 42);
-			this->button1->TabIndex = 0;
-			this->button1->Text = L"button1";
-			this->button1->UseVisualStyleBackColor = true;
+			this->btnSkaiciuotuvas->Location = System::Drawing::Point(60, 100);
+			this->btnSkaiciuotuvas->Name = L"btnSkaiciuotuvas";
+			this->btnSkaiciuotuvas->Size = System::Drawing::Size(85, 42);
+			this->btnSkaiciuotuvas->TabIndex = 0;
+			this->btnSkaiciuotuvas->Text = L"Skaičiuotuvas";
+			this->btnSkaiciuotuvas->UseVisualStyleBackColor = true;
+			this->btnSkaiciuotuvas->Click += gcnew System::EventHandler(this, &mainForm::btnSkaiciuotuvas_Click);
 			// 
 			// mainForm
 			// 
@@ -70,16 +73,20 @@ namespace SMK_1_praktika {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
 			this->ClientSize = System::Drawing::Size(212, 206);
-			this->Controls->Add(this->button1);
+			this->Controls->Add(this->btnSkaiciuotuvas);
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"mainForm";
-			this->Text = L"Prad�ia";
+			this->Text = L"Pradžia";
 			this->Load += gcnew System::EventHandler(this, &mainForm::mainForm_Load);
 			this->ResumeLayout(false);
 
 		}
 #pragma endregion
 	private: System::Void mainForm_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void btnSkaiciuotuvas_Click(System::Object^ sender, System::EventArgs^ e) {
+		frSkaiciuotuvas^ form2 = gcnew frSkaiciuotuvas();
+		form2->Show();
 	}
 	};
 }

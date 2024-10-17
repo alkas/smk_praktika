@@ -8,11 +8,12 @@ using namespace System;
 // }
 
 #include "mainForm.h"
+#include "frSkaiciuotuvas.h"
 
 using namespace System::Windows::Forms;
 
 [STAThread]
-int main()
+int main(array<System::String^>^ args)
 {
   Application::EnableVisualStyles();
   Application::SetCompatibleTextRenderingDefault(false);
