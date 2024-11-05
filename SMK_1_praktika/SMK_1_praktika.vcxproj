@@ -155,9 +155,9 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="frSkaiciuotuvas.cpp" />
     <ClCompile Include="MyForm.cpp" />
-    <ClCompile Include="MyForm1.cpp" />
-    <ClCompile Include="MyForm11.cpp" />
-    <ClCompile Include="MyForm12.cpp" />
+    <ClCompile Include="frInicialai.cpp" />
+    <ClCompile Include="frGraza.cpp" />
+    <ClCompile Include="frGeneratorius.cpp" />
     <ClCompile Include="SMK_1_praktika.cpp" />
     <ClCompile Include="mainForm.cpp" />
     <ClCompile Include="pch.cpp">
