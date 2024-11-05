@@ -77,9 +77,11 @@ namespace SMK_1_praktika {
 		void InitializeComponent(void)
 		{
 			this->splitContainer1 = (gcnew System::Windows::Forms::SplitContainer());
-			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
-			this->lblOperation = (gcnew System::Windows::Forms::Label());
 			this->lblDisplay = (gcnew System::Windows::Forms::Label());
+			this->lblOperation = (gcnew System::Windows::Forms::Label());
+			this->tableLayoutPanel1 = (gcnew System::Windows::Forms::TableLayoutPanel());
+			this->button20 = (gcnew System::Windows::Forms::Button());
+			this->button19 = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->button3 = (gcnew System::Windows::Forms::Button());
@@ -98,8 +100,6 @@ namespace SMK_1_praktika {
 			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->button17 = (gcnew System::Windows::Forms::Button());
 			this->button18 = (gcnew System::Windows::Forms::Button());
-			this->button19 = (gcnew System::Windows::Forms::Button());
-			this->button20 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->splitContainer1))->BeginInit();
 			this->splitContainer1->Panel1->SuspendLayout();
 			this->splitContainer1->SuspendLayout();
@@ -112,6 +112,7 @@ namespace SMK_1_praktika {
 			this->splitContainer1->FixedPanel = System::Windows::Forms::FixedPanel::Panel1;
 			this->splitContainer1->IsSplitterFixed = true;
 			this->splitContainer1->Location = System::Drawing::Point(0, 0);
+			this->splitContainer1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->splitContainer1->Name = L"splitContainer1";
 			// 
 			// splitContainer1.Panel1
@@ -124,9 +125,32 @@ namespace SMK_1_praktika {
 			// splitContainer1.Panel2
 			// 
 			this->splitContainer1->Panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::splitContainer1_Panel2_Paint);
-			this->splitContainer1->Size = System::Drawing::Size(513, 345);
+			this->splitContainer1->Size = System::Drawing::Size(547, 462);
 			this->splitContainer1->SplitterDistance = 379;
+			this->splitContainer1->SplitterWidth = 5;
 			this->splitContainer1->TabIndex = 0;
+			// 
+			// lblDisplay
+			// 
+			this->lblDisplay->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lblDisplay->Location = System::Drawing::Point(7, 49);
+			this->lblDisplay->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->lblDisplay->Name = L"lblDisplay";
+			this->lblDisplay->Size = System::Drawing::Size(480, 49);
+			this->lblDisplay->TabIndex = 2;
+			this->lblDisplay->Text = L"label1";
+			this->lblDisplay->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			// 
+			// lblOperation
+			// 
+			this->lblOperation->Location = System::Drawing::Point(4, 12);
+			this->lblOperation->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			this->lblOperation->Name = L"lblOperation";
+			this->lblOperation->Size = System::Drawing::Size(480, 25);
+			this->lblOperation->TabIndex = 1;
+			this->lblOperation->Text = L"lblOperation";
+			this->lblOperation->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
 			// 
 			// tableLayoutPanel1
 			// 
@@ -160,45 +184,52 @@ namespace SMK_1_praktika {
 			this->tableLayoutPanel1->Controls->Add(this->button17, 0, 0);
 			this->tableLayoutPanel1->Controls->Add(this->button18, 3, 4);
 			this->tableLayoutPanel1->Dock = System::Windows::Forms::DockStyle::Bottom;
-			this->tableLayoutPanel1->Location = System::Drawing::Point(0, 85);
+			this->tableLayoutPanel1->Location = System::Drawing::Point(0, 142);
+			this->tableLayoutPanel1->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
-			this->tableLayoutPanel1->Padding = System::Windows::Forms::Padding(5);
+			this->tableLayoutPanel1->Padding = System::Windows::Forms::Padding(7, 6, 7, 6);
 			this->tableLayoutPanel1->RowCount = 5;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 20)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(379, 260);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(379, 320);
 			this->tableLayoutPanel1->TabIndex = 0;
 			// 
-			// lblOperation
+			// button20
 			// 
-			this->lblOperation->Location = System::Drawing::Point(3, 10);
-			this->lblOperation->Name = L"lblOperation";
-			this->lblOperation->Size = System::Drawing::Size(360, 20);
-			this->lblOperation->TabIndex = 1;
-			this->lblOperation->Text = L"lblOperation";
-			this->lblOperation->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
-			// 
-			// lblDisplay
-			// 
-			this->lblDisplay->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 24, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->button20->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button20->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lblDisplay->Location = System::Drawing::Point(5, 40);
-			this->lblDisplay->Name = L"lblDisplay";
-			this->lblDisplay->Size = System::Drawing::Size(360, 40);
-			this->lblDisplay->TabIndex = 2;
-			this->lblDisplay->Text = L"label1";
-			this->lblDisplay->TextAlign = System::Drawing::ContentAlignment::MiddleRight;
+			this->button20->Location = System::Drawing::Point(98, 6);
+			this->button20->Margin = System::Windows::Forms::Padding(0);
+			this->button20->Name = L"button20";
+			this->button20->Size = System::Drawing::Size(91, 61);
+			this->button20->TabIndex = 19;
+			this->button20->Text = L"x!";
+			this->button20->UseVisualStyleBackColor = true;
+			// 
+			// button19
+			// 
+			this->button19->Dock = System::Windows::Forms::DockStyle::Fill;
+			this->button19->Location = System::Drawing::Point(189, 250);
+			this->button19->Margin = System::Windows::Forms::Padding(0);
+			this->button19->Name = L"button19";
+			this->button19->Size = System::Drawing::Size(91, 64);
+			this->button19->TabIndex = 18;
+			this->button19->Text = L",";
+			this->button19->UseVisualStyleBackColor = true;
 			// 
 			// button1
 			// 
 			this->button1->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button1->Location = System::Drawing::Point(5, 55);
+			this->button1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->Location = System::Drawing::Point(7, 67);
 			this->button1->Margin = System::Windows::Forms::Padding(0);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(92, 50);
+			this->button1->Size = System::Drawing::Size(91, 61);
 			this->button1->TabIndex = 0;
 			this->button1->Text = L"7";
 			this->button1->UseVisualStyleBackColor = true;
@@ -207,10 +238,12 @@ namespace SMK_1_praktika {
 			// button2
 			// 
 			this->button2->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button2->Location = System::Drawing::Point(97, 55);
+			this->button2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->Location = System::Drawing::Point(98, 67);
 			this->button2->Margin = System::Windows::Forms::Padding(0);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(92, 50);
+			this->button2->Size = System::Drawing::Size(91, 61);
 			this->button2->TabIndex = 1;
 			this->button2->Text = L"8";
 			this->button2->UseVisualStyleBackColor = true;
@@ -219,21 +252,22 @@ namespace SMK_1_praktika {
 			// button3
 			// 
 			this->button3->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button3->Location = System::Drawing::Point(189, 55);
+			this->button3->Location = System::Drawing::Point(189, 67);
 			this->button3->Margin = System::Windows::Forms::Padding(0);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(92, 50);
+			this->button3->Size = System::Drawing::Size(91, 61);
 			this->button3->TabIndex = 2;
 			this->button3->Text = L"9";
 			this->button3->UseVisualStyleBackColor = true;
+			this->button3->Click += gcnew System::EventHandler(this, &MyForm::button3_Click);
 			// 
 			// button4
 			// 
 			this->button4->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button4->Location = System::Drawing::Point(5, 105);
+			this->button4->Location = System::Drawing::Point(7, 128);
 			this->button4->Margin = System::Windows::Forms::Padding(0);
 			this->button4->Name = L"button4";
-			this->button4->Size = System::Drawing::Size(92, 50);
+			this->button4->Size = System::Drawing::Size(91, 61);
 			this->button4->TabIndex = 3;
 			this->button4->Text = L"4";
 			this->button4->UseVisualStyleBackColor = true;
@@ -241,10 +275,10 @@ namespace SMK_1_praktika {
 			// button5
 			// 
 			this->button5->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button5->Location = System::Drawing::Point(97, 105);
+			this->button5->Location = System::Drawing::Point(98, 128);
 			this->button5->Margin = System::Windows::Forms::Padding(0);
 			this->button5->Name = L"button5";
-			this->button5->Size = System::Drawing::Size(92, 50);
+			this->button5->Size = System::Drawing::Size(91, 61);
 			this->button5->TabIndex = 4;
 			this->button5->Text = L"5";
 			this->button5->UseVisualStyleBackColor = true;
@@ -252,10 +286,10 @@ namespace SMK_1_praktika {
 			// button6
 			// 
 			this->button6->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button6->Location = System::Drawing::Point(189, 105);
+			this->button6->Location = System::Drawing::Point(189, 128);
 			this->button6->Margin = System::Windows::Forms::Padding(0);
 			this->button6->Name = L"button6";
-			this->button6->Size = System::Drawing::Size(92, 50);
+			this->button6->Size = System::Drawing::Size(91, 61);
 			this->button6->TabIndex = 5;
 			this->button6->Text = L"6";
 			this->button6->UseVisualStyleBackColor = true;
@@ -263,10 +297,10 @@ namespace SMK_1_praktika {
 			// button7
 			// 
 			this->button7->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button7->Location = System::Drawing::Point(281, 5);
+			this->button7->Location = System::Drawing::Point(280, 6);
 			this->button7->Margin = System::Windows::Forms::Padding(0);
 			this->button7->Name = L"button7";
-			this->button7->Size = System::Drawing::Size(93, 50);
+			this->button7->Size = System::Drawing::Size(92, 61);
 			this->button7->TabIndex = 6;
 			this->button7->Text = L"/";
 			this->button7->UseVisualStyleBackColor = true;
@@ -274,10 +308,10 @@ namespace SMK_1_praktika {
 			// button8
 			// 
 			this->button8->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button8->Location = System::Drawing::Point(281, 55);
+			this->button8->Location = System::Drawing::Point(280, 67);
 			this->button8->Margin = System::Windows::Forms::Padding(0);
 			this->button8->Name = L"button8";
-			this->button8->Size = System::Drawing::Size(93, 50);
+			this->button8->Size = System::Drawing::Size(92, 61);
 			this->button8->TabIndex = 7;
 			this->button8->Text = L"*";
 			this->button8->UseVisualStyleBackColor = true;
@@ -285,10 +319,10 @@ namespace SMK_1_praktika {
 			// button9
 			// 
 			this->button9->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button9->Location = System::Drawing::Point(5, 155);
+			this->button9->Location = System::Drawing::Point(7, 189);
 			this->button9->Margin = System::Windows::Forms::Padding(0);
 			this->button9->Name = L"button9";
-			this->button9->Size = System::Drawing::Size(92, 50);
+			this->button9->Size = System::Drawing::Size(91, 61);
 			this->button9->TabIndex = 8;
 			this->button9->Text = L"1";
 			this->button9->UseVisualStyleBackColor = true;
@@ -296,10 +330,10 @@ namespace SMK_1_praktika {
 			// button10
 			// 
 			this->button10->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button10->Location = System::Drawing::Point(97, 155);
+			this->button10->Location = System::Drawing::Point(98, 189);
 			this->button10->Margin = System::Windows::Forms::Padding(0);
 			this->button10->Name = L"button10";
-			this->button10->Size = System::Drawing::Size(92, 50);
+			this->button10->Size = System::Drawing::Size(91, 61);
 			this->button10->TabIndex = 9;
 			this->button10->Text = L"2";
 			this->button10->UseVisualStyleBackColor = true;
@@ -307,10 +341,10 @@ namespace SMK_1_praktika {
 			// button11
 			// 
 			this->button11->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button11->Location = System::Drawing::Point(97, 205);
+			this->button11->Location = System::Drawing::Point(98, 250);
 			this->button11->Margin = System::Windows::Forms::Padding(0);
 			this->button11->Name = L"button11";
-			this->button11->Size = System::Drawing::Size(92, 50);
+			this->button11->Size = System::Drawing::Size(91, 64);
 			this->button11->TabIndex = 10;
 			this->button11->Text = L"0";
 			this->button11->UseVisualStyleBackColor = true;
@@ -318,10 +352,10 @@ namespace SMK_1_praktika {
 			// button12
 			// 
 			this->button12->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button12->Location = System::Drawing::Point(5, 205);
+			this->button12->Location = System::Drawing::Point(7, 250);
 			this->button12->Margin = System::Windows::Forms::Padding(0);
 			this->button12->Name = L"button12";
-			this->button12->Size = System::Drawing::Size(92, 50);
+			this->button12->Size = System::Drawing::Size(91, 64);
 			this->button12->TabIndex = 11;
 			this->button12->Text = L"+/-";
 			this->button12->UseVisualStyleBackColor = true;
@@ -329,10 +363,10 @@ namespace SMK_1_praktika {
 			// button13
 			// 
 			this->button13->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button13->Location = System::Drawing::Point(189, 155);
+			this->button13->Location = System::Drawing::Point(189, 189);
 			this->button13->Margin = System::Windows::Forms::Padding(0);
 			this->button13->Name = L"button13";
-			this->button13->Size = System::Drawing::Size(92, 50);
+			this->button13->Size = System::Drawing::Size(91, 61);
 			this->button13->TabIndex = 12;
 			this->button13->Text = L"3";
 			this->button13->UseVisualStyleBackColor = true;
@@ -340,10 +374,10 @@ namespace SMK_1_praktika {
 			// button14
 			// 
 			this->button14->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button14->Location = System::Drawing::Point(189, 5);
+			this->button14->Location = System::Drawing::Point(189, 6);
 			this->button14->Margin = System::Windows::Forms::Padding(0);
 			this->button14->Name = L"button14";
-			this->button14->Size = System::Drawing::Size(92, 50);
+			this->button14->Size = System::Drawing::Size(91, 61);
 			this->button14->TabIndex = 13;
 			this->button14->Text = L"%";
 			this->button14->UseVisualStyleBackColor = true;
@@ -351,10 +385,10 @@ namespace SMK_1_praktika {
 			// button15
 			// 
 			this->button15->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button15->Location = System::Drawing::Point(281, 105);
+			this->button15->Location = System::Drawing::Point(280, 128);
 			this->button15->Margin = System::Windows::Forms::Padding(0);
 			this->button15->Name = L"button15";
-			this->button15->Size = System::Drawing::Size(93, 50);
+			this->button15->Size = System::Drawing::Size(92, 61);
 			this->button15->TabIndex = 14;
 			this->button15->Text = L"--";
 			this->button15->UseVisualStyleBackColor = true;
@@ -362,10 +396,10 @@ namespace SMK_1_praktika {
 			// button16
 			// 
 			this->button16->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button16->Location = System::Drawing::Point(281, 155);
+			this->button16->Location = System::Drawing::Point(280, 189);
 			this->button16->Margin = System::Windows::Forms::Padding(0);
 			this->button16->Name = L"button16";
-			this->button16->Size = System::Drawing::Size(93, 50);
+			this->button16->Size = System::Drawing::Size(92, 61);
 			this->button16->TabIndex = 15;
 			this->button16->Text = L"+";
 			this->button16->UseVisualStyleBackColor = true;
@@ -373,54 +407,36 @@ namespace SMK_1_praktika {
 			// button17
 			// 
 			this->button17->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button17->Location = System::Drawing::Point(5, 5);
+			this->button17->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 10, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button17->Location = System::Drawing::Point(7, 6);
 			this->button17->Margin = System::Windows::Forms::Padding(0);
 			this->button17->Name = L"button17";
-			this->button17->Size = System::Drawing::Size(92, 50);
+			this->button17->Size = System::Drawing::Size(91, 61);
 			this->button17->TabIndex = 16;
 			this->button17->Text = L"C";
 			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Click += gcnew System::EventHandler(this, &MyForm::button17_Click);
 			// 
 			// button18
 			// 
 			this->button18->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button18->Location = System::Drawing::Point(281, 205);
+			this->button18->Location = System::Drawing::Point(280, 250);
 			this->button18->Margin = System::Windows::Forms::Padding(0);
 			this->button18->Name = L"button18";
-			this->button18->Size = System::Drawing::Size(93, 50);
+			this->button18->Size = System::Drawing::Size(92, 64);
 			this->button18->TabIndex = 17;
 			this->button18->Text = L"=";
 			this->button18->UseMnemonic = false;
 			this->button18->UseVisualStyleBackColor = true;
 			// 
-			// button19
-			// 
-			this->button19->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button19->Location = System::Drawing::Point(189, 205);
-			this->button19->Margin = System::Windows::Forms::Padding(0);
-			this->button19->Name = L"button19";
-			this->button19->Size = System::Drawing::Size(92, 50);
-			this->button19->TabIndex = 18;
-			this->button19->Text = L",";
-			this->button19->UseVisualStyleBackColor = true;
-			// 
-			// button20
-			// 
-			this->button20->Dock = System::Windows::Forms::DockStyle::Fill;
-			this->button20->Location = System::Drawing::Point(97, 5);
-			this->button20->Margin = System::Windows::Forms::Padding(0);
-			this->button20->Name = L"button20";
-			this->button20->Size = System::Drawing::Size(92, 50);
-			this->button20->TabIndex = 19;
-			this->button20->Text = L"x!";
-			this->button20->UseVisualStyleBackColor = true;
-			// 
 			// MyForm
 			// 
-			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+			this->AutoScaleDimensions = System::Drawing::SizeF(8, 16);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(513, 345);
+			this->ClientSize = System::Drawing::Size(547, 462);
 			this->Controls->Add(this->splitContainer1);
+			this->Margin = System::Windows::Forms::Padding(4, 4, 4, 4);
 			this->Name = L"MyForm";
 			this->Text = L"MyForm";
 			this->splitContainer1->Panel1->ResumeLayout(false);
@@ -438,6 +454,10 @@ namespace SMK_1_praktika {
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
