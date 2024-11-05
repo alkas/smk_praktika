@@ -35,6 +35,15 @@
     <ClInclude Include="MyForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="frInicialai.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frGraza.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="frGeneratorius.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SMK_1_praktika.cpp">
@@ -53,6 +62,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MyForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm11.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MyForm12.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -139,6 +139,15 @@
     <ClInclude Include="MyForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frInicialai.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frGraza.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="frGeneratorius.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -146,6 +155,9 @@
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="frSkaiciuotuvas.cpp" />
     <ClCompile Include="MyForm.cpp" />
+    <ClCompile Include="MyForm1.cpp" />
+    <ClCompile Include="MyForm11.cpp" />
+    <ClCompile Include="MyForm12.cpp" />
     <ClCompile Include="SMK_1_praktika.cpp" />
     <ClCompile Include="mainForm.cpp" />
     <ClCompile Include="pch.cpp">
@@ -174,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frInicialai.resx">
+      <DependentUpon>frInicialai.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
