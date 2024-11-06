@@ -1,5 +1,6 @@
 ﻿#pragma once
 
+#include "frAutorius.h"
 #include "frSkaiciuotuvas.h"
 #include "MyForm.h"
 
@@ -39,6 +40,10 @@ namespace SMK_1_praktika {
 		}
 	private: System::Windows::Forms::Button^ btnSkaiciuotuvas;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::MenuStrip^ menuStrip1;
+	private: System::Windows::Forms::ToolStripMenuItem^ autoriusToolStripMenuItem;
+	private: System::Windows::Forms::ToolStripMenuItem^ ExitToolStripMenuItem;
+
 	protected:
 
 	protected:
@@ -58,6 +63,10 @@ namespace SMK_1_praktika {
 		{
 			this->btnSkaiciuotuvas = (gcnew System::Windows::Forms::Button());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->menuStrip1 = (gcnew System::Windows::Forms::MenuStrip());
+			this->autoriusToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->ExitToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->menuStrip1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// btnSkaiciuotuvas
@@ -80,6 +89,32 @@ namespace SMK_1_praktika {
 			this->button1->UseVisualStyleBackColor = true;
 			this->button1->Click += gcnew System::EventHandler(this, &mainForm::button1_Click);
 			// 
+			// menuStrip1
+			// 
+			this->menuStrip1->Items->AddRange(gcnew cli::array< System::Windows::Forms::ToolStripItem^  >(2) {
+				this->autoriusToolStripMenuItem,
+					this->ExitToolStripMenuItem
+			});
+			this->menuStrip1->Location = System::Drawing::Point(0, 0);
+			this->menuStrip1->Name = L"menuStrip1";
+			this->menuStrip1->Size = System::Drawing::Size(212, 24);
+			this->menuStrip1->TabIndex = 2;
+			this->menuStrip1->Text = L"menuStrip1";
+			// 
+			// autoriusToolStripMenuItem
+			// 
+			this->autoriusToolStripMenuItem->Name = L"autoriusToolStripMenuItem";
+			this->autoriusToolStripMenuItem->Size = System::Drawing::Size(64, 20);
+			this->autoriusToolStripMenuItem->Text = L"Autorius";
+			this->autoriusToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainForm::autoriusToolStripMenuItem_Click);
+			// 
+			// ExitToolStripMenuItem
+			// 
+			this->ExitToolStripMenuItem->Name = L"ExitToolStripMenuItem";
+			this->ExitToolStripMenuItem->Size = System::Drawing::Size(43, 20);
+			this->ExitToolStripMenuItem->Text = L"Išeiti";
+			this->ExitToolStripMenuItem->Click += gcnew System::EventHandler(this, &mainForm::ExitToolStripMenuItem_Click);
+			// 
 			// mainForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -88,11 +123,16 @@ namespace SMK_1_praktika {
 			this->ClientSize = System::Drawing::Size(212, 206);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->btnSkaiciuotuvas);
+			this->Controls->Add(this->menuStrip1);
+			this->MainMenuStrip = this->menuStrip1;
 			this->Margin = System::Windows::Forms::Padding(2);
 			this->Name = L"mainForm";
 			this->Text = L"Pradžia";
 			this->Load += gcnew System::EventHandler(this, &mainForm::mainForm_Load);
+			this->menuStrip1->ResumeLayout(false);
+			this->menuStrip1->PerformLayout();
 			this->ResumeLayout(false);
+			this->PerformLayout();
 
 		}
 #pragma endregion
@@ -106,5 +146,12 @@ namespace SMK_1_praktika {
 		MyForm^ form3 = gcnew MyForm();
 		form3->Show();
 	}
-	};
+	private: System::Void ExitToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		Close();
+	}
+	private: System::Void autoriusToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		frAutorius^ forma = gcnew frAutorius();
+		forma->Show();
+	}
+};
 }

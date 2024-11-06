@@ -148,6 +148,9 @@
     <ClInclude Include="frGeneratorius.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="frAutorius.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -158,6 +161,7 @@
     <ClCompile Include="frInicialai.cpp" />
     <ClCompile Include="frGraza.cpp" />
     <ClCompile Include="frGeneratorius.cpp" />
+    <ClCompile Include="frAutorius.cpp" />
     <ClCompile Include="SMK_1_praktika.cpp" />
     <ClCompile Include="mainForm.cpp" />
     <ClCompile Include="pch.cpp">
@@ -178,6 +182,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="frAutorius.resx">
+      <DependentUpon>frAutorius.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frSkaiciuotuvas.resx">
       <DependentUpon>frSkaiciuotuvas.h</DependentUpon>
     </EmbeddedResource>

@@ -44,6 +44,9 @@
     <ClInclude Include="frGeneratorius.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="frAutorius.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="SMK_1_praktika.cpp">
@@ -64,13 +67,16 @@
     <ClCompile Include="MyForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyForm1.cpp">
+    <ClCompile Include="frInicialai.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyForm11.cpp">
+    <ClCompile Include="frGraza.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="MyForm12.cpp">
+    <ClCompile Include="frGeneratorius.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="frAutorius.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
